@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Turnos</title>
 </head>
 <body>
@@ -43,7 +43,77 @@
         </div>
       </nav>        
     </header>
-    
+    <main>
+        <section id="turnos-page">
+            <div class="intro__turnos">
+                <h1 class="intro-turnos">
+                    Socilitar turno</h1>
+                <div class="description-turnos">
+                    <p>Dejanos tus datos que nos estaremos comunicando lo antes posible para coordinar un turno.</p>
+                </div>
+            </div>
+            <form class="form-turnos" action="">
+            <div class="form">
+                <label for="name">Nombre y apellido</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form">
+                <label for="age">Edad</label>
+                <input type="text" name="age">
+            </div>
+            <div class="form">
+                <label for="tel">Teléfono</label>
+                <input type="text" name="tel">
+            </div>
+            <div class="form">
+                <label for="mail">E-mail</label>
+                <input type="text" name="mail">
+            </div>
+            <div class="form">
+                <p>¿Ya sos paciente?</p>
+                <div class="paciente">
+                    <div class="paciente-si">Sí</div>
+                    <input type="radio" name="paciente" value="si">
+                    <div class="paciente-no">No, primera vez</div>
+                    <input type="radio" name="paciente" value="no">
+                </div>
+                    
+            </div>
+            <div class="elegir-dr">
+                <div class="form elegir__Dr">Elegí al profesional</div>
+                <div class="elegi-profesional">
+                    <select name="dr" id="dr">
+                        <option value="DraJuli">Dra Coronado, Julieta</option>
+                        <option value="DraSofi">Dra Reinoso, Sofía</option>
+                        <option value="DrPablo">Dr Peralta, Pablo</option>
+                        <option value="DraVane">Dra Estevez, Vanesa</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-botones">
+                <input class="form-enviar" type="submit" value="Enviar" />
+                <input type="reset" value="Borrar todo" />
+            </div>
+        </form>
+        </section>
+        <!-- DATOS CONSULTORIO -->
+        <h2 class="titulo2-turnos intro-turnos">
+            Nos encontramos en:
+        </h2>
+        <section id="info-consul">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.373738700594!2d-58.42717689999999!3d-34.594709699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca799127ac21%3A0x70e7ab6db1646e39!2sJuli%C3%A1n%20%C3%81lvarez%201220%2C%20C1414DRZ%20CABA!5e0!3m2!1ses-419!2sar!4v1674427998631!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>  
+            <div class="datos-consul">
+                <p><span class="datosConsul-list">Dirección</span> Julián Álvarez 1220 3°A</p>
+                <p><span class="datosConsul-list">Teléfono</span> 4855-7978</p>
+                <p><span class="datosConsul-list">WhatsApp</span> 11-5489-7071</p>
+                <p class="datosConsul-list">No asistir sin cita previa.</p>
+            </div>
+            
+        </section>
+    </main>    
     <footer class="bg-black p-4 text-white">
         <div class="container d-flex justify-content-between px-5 align-items-center">              
           <div>
