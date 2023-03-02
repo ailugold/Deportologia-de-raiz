@@ -7,13 +7,30 @@
     background-image: var(--bs-gradient);
 }
 
-.section-2-nos{
+.section-nos{
     background-color: #EFEEED;
+    padding-top: 2rem;
+}
+
+.section-nos-description{
+    text-align: center;
 }
 
 .section-2-nos--description{
     color: #8A99A1;
 }
+
+.titulos-nos{
+    color: #8A99A1;
+}
+
+.titulos-nos-2{
+    color: #223466;
+}
+
+
+
+
 
 * {
     margin:0;
